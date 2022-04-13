@@ -1,0 +1,147 @@
+/*********** base style ***********/
+
+body {
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+     }
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      font-weight: bold;
+      margin: auto;
+    }
+    
+    h2 {
+      position:relative;
+      float: left;
+      margin-top: 60px;
+      left:40%;
+      text-align:center;
+      font-size: 1.7em;
+      
+    }
+    
+    .paragraph {
+    
+      background-color:#ffe4c4;
+      padding: 45px 20px 30px 20px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      text-align:left;    
+    } 
+
+/** HEADER **/
+
+#header-nav {
+  background-color: #e9967a;
+  border-radius:0;
+  border: 2px solid #000000;
+  padding: 0px;
+
+}
+.navbar-brand {
+  padding-top: 5px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  color: #557c3e;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-bottom: 10;
+  text-align: left;
+  
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { 
+  font-size: .7em;
+  margin-top: 15px;
+
+}
+.navbar-brand p span {
+  vertical-align: middle;
+
+}
+
+#nav-list {
+  margin-top: 10px;
+
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center; 
+  border-top: 2px solid #000000;  
+}
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -50px;
+}
+ /* END HEADER */
+
+
+   /********** Media queries **********/
+
+  .row{
+    width: 100%;
+    margin: auto;
+  }
+  
+  /* Small laptop */
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+
+      }
+  
+  /* Tablet */
+
+  @media (min-width: 768px) and (max-width: 991px) {
+   }
+  
+  /* Mobile phones */
+
+  @media (max-width: 767px) {
+  
+    /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width (responsive font size unit)*/
+  }
+  .navbar-brand p { 
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p  {
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+}
